@@ -1,0 +1,28 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ Bank</title>
+    <link rel="stylesheet" th:href="@{/style.css}"> </head>
+<body>
+<header>
+        <a href="/home">
+            <h1 class="bank-name">XYZ Bank</h1>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="/open-account">Open Account</a></li>
+                <li><a href="/order-card">Apply for Credit Card</a></li>
+                <li><a href="/order-card">Get Debit Card</a></li>
+                <li><a href="#">Transactions</a></li>
+                <li><a href="#">Dues</a></li>
+            </ul>
+        </nav>
+    </header>
+<p th:text = " 'Hi '+${name}+','"></p>
+<br>
+<p th:text = " 'Your account has been successfully registered with us. Please note the below account id for your future use.'"></p>
+<p th:text = "${accountid}"></p>
+<br>
+<p>Thanks</p>
+</body></html>
