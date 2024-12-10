@@ -42,7 +42,7 @@ public class AcountController {
 			Model model) {
 		System.out.println(limit);
 		try {
-			model.addAttribute("cardnumber", accountService.createCard(accntId, crdTyp, limit));
+			model.addAttribute("cardnumber", accountService.createCard(accntId, crdTyp, limit, model));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
